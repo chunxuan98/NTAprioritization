@@ -1,3 +1,10 @@
+#' @import rcdk
+#' @import rcdklibs
+#' @import randomForest
+#' @import leaps
+#' @import caret
+#' @import mlr
+
 #####RT prediction model functions###########
 #function to correct the smiles to canonical smiles
 canosmiles <- function(input){

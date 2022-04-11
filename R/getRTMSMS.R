@@ -1,3 +1,20 @@
+#' @import rcdk
+#' @import rcdklibs
+#' @import randomForest
+#' @import leaps
+#' @import caret
+#' @import corrplot
+#' @import tidyverse
+#' @import mlr
+#' @import dplyr
+#' @import Metrics
+#' @import ggpubr
+#' @import ggplot2
+#' @import miceadds
+#' @import rio
+#' @import openxlsx
+#' @import ggrepel
+
 #function 1 combine and clean data from input, predit the retention time and return the final data
 getRTMSMS <- function(x){
   #select the datafolder
