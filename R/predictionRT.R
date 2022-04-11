@@ -4,6 +4,7 @@
 #' @import leaps
 #' @import caret
 #' @import mlr
+#' @import usethis
 
 #####RT prediction model functions###########
 #function to correct the smiles to canonical smiles
