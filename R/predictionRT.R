@@ -40,7 +40,7 @@ getdesc_nopp <- function(input){
 predictionRT <- function(input){
   descs <- getdesc_nopp(input) #get mds without any data imputation
   #find a way to load colnames data, settings,and model
-  usethis::use_data(ntaRTmodel, ntaRTdescs, ntaRTnormsettings)
+  devtools::use_data(ntaRTmodel, ntaRTdescs, ntaRTnormsettings)
   #load.Rdata('ntaRTmodel.RData','predmodel')
   #load.Rdata('ntaRTdescs.RData','descname')
   #load.Rdata('ntaRTnormsettings.RData','settings')
