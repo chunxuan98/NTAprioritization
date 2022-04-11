@@ -7,6 +7,7 @@
 
 #####RT prediction model functions###########
 #function to correct the smiles to canonical smiles
+#' @export
 canosmiles <- function(input){
   mols <- parse.smiles(input)
   targets <- unlist(lapply(mols,get.smiles,smiles.flavors(c('Canonical')))) #return smiles in list element
@@ -18,6 +19,7 @@ canosmiles <- function(input){
 }
 
 #define functions for molecular descriptors without preprocess
+#' @export
 getdesc_nopp <- function(input){
   mols <- parse.smiles(input)
   descNames <- unique(unlist(sapply(get.desc.categories(),get.desc.names)))
@@ -34,6 +36,7 @@ getdesc_nopp <- function(input){
 }
 
 #get prediction from new data, #input as smiles lists
+#' @export
 predictionRT <- function(input){
   descs <- getdesc_nopp(input) #get mds without any data imputation
   #find a way to load colnames data, settings,and model

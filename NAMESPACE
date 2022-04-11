@@ -1,4 +1,9 @@
-exportPattern("^[[:alpha:]]+")
+export(getRTMSMS)
+export(getTierlevel)
+export(canosmiles)
+export(getdesc_nopp)
+export(predictionRT)
+export(RTMSMS)
 
 import(rcdk)
 import(rcdklibs)

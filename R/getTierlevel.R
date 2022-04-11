@@ -10,6 +10,7 @@
 
 
 ##############matching and retrieving tox data from local database#######
+#' @export
 getTierlevel <- function(input){
   # select toxicity
   tox = readline(prompt = "please select the following toxicity:\nORLD50\nDMLC50\nDT\nFMLC50\nAM\nTPIGC50\nToxPi")

@@ -1,4 +1,5 @@
 ##################RT-MSMSLEVEL grouping##########################
+#' @export
 RTMSMS <- function(dat){
   # a <- choose.files()
   # dat <- import(a)

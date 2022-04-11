@@ -16,6 +16,7 @@
 #' @import ggrepel
 
 #function 1 combine and clean data from input, predit the retention time and return the final data
+#' @export
 getRTMSMS <- function(x){
   #select the datafolder
   x <- choose.dir(getwd(),caption = "Select folder")
