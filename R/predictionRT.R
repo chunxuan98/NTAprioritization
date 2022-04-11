@@ -41,10 +41,10 @@ getdesc_nopp <- function(input){
 predictionRT <- function(input){
   descs <- getdesc_nopp(input) #get mds without any data imputation
   #find a way to load colnames data, settings,and model
-  usethis::use_data(ntaRTmodel, ntaRTdescs, ntaRTnormsettings)
-  #load.Rdata('ntaRTmodel.RData','predmodel')
-  #load.Rdata('ntaRTdescs.RData','descname')
-  #load.Rdata('ntaRTnormsettings.RData','settings')
+  #usethis::use_data(ntaRTmodel, ntaRTdescs, ntaRTnormsettings)
+  load.Rdata('ntaRTmodel.RData','predmodel')
+  load.Rdata('ntaRTdescs.RData','descname')
+  load.Rdata('ntaRTnormsettings.RData','settings')
   descsdata <- descs[,descname] #select mds to prepare same dimensions for normalzation settings
   descsdata <- predict(settings,descsdata) #get normalized mds for modeling
   predictionrt <- predict(predmodel, newdata = descsdata) #model select the mds as it trained
